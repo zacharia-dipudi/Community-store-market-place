@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Community Store</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Figtree:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="top">
+    <h1>Community Store</h1>
+    <button class="chip who" data-act="goto" data-tab="me" id="who">Sign in</button>
+  </header>
+
+  <main id="view" tabindex="-1"></main>
+
+  <nav class="tabs" aria-label="Main">
+    <button data-act="goto" data-tab="shop"><span>🛍️</span>Shop</button>
+    <button data-act="goto" data-tab="board"><span>📌</span>Board</button>
+    <button data-act="goto" data-tab="cart"><span>🧺</span>Cart<i class="badge" id="cartBadge"></i></button>
+    <button data-act="goto" data-tab="alerts"><span>🔔</span>Alerts<i class="badge" id="noteBadge"></i></button>
+    <button data-act="goto" data-tab="me"><span>👤</span>Me</button>
+  </nav>
+
+  <dialog id="modal"></dialog>
+  <div id="toast" role="status" aria-live="polite"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
